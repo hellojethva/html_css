@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: arial;
+}
+
+.navbar{
+    width: 100%;
+    background-color: silver;
+    height: 120px;
+    color: white;
+    position: fixed;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.nav-logo{
+    width: 170px;
+    height: 50px;
+    margin-left: 20px;
+    /* position: fixed; */
+}
+
+.logo{
+    background-image: url(logo\ \(4\).png);
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+}
+
+.title-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    text-shadow: 1px 2px 5px rgb(104, 168, 65);
+    color: black;
+    margin-top: -20px;
+}
+
+.menu{
+    border: 0px solid black;
+   
+}
+.menu > ul{
+    background-color: rgb(40, 34, 34);
+    width: 100%;    
+}
+
+.menu ul{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    z-index: 99;
+    top: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: silver;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 0 30px;
+    display: block;
+    text-align: center;
+    
+}
+
+.menu ul li{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu ul ul {
+    position: absolute;
+    background-color: rgb(140, 100, 100);
+    color: white;
+    color: black;
+    top: 100%;
+    left: 0%;
+    display: none;
+    
+}
+
+.menu ul ul li{
+    float: none;
+    width: 150px;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+  
+}
+
+.menu ul li a:hover{
+    color: green;
+}
+
+.bg{
+    background-image: url(bg.avif);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 168px;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.child{
+    width: 32%;
+    height: 400px;
+    /* background-color: #30a84e; */
+    border: 1px solid black;
+    margin-top: 20px;
+    position: relative;
+    top: 200px;
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    
+    
+}
+
+.about{
+    font-size: 2rem;
+    color: rgb(251, 17, 17);
+}
+
+.content{
+    position: relative; 
+    top: 200px;
+    padding: 30px;
+    color: white;
+    text-align: justify;
+    line-height: 35px;
+} 
+
+.design-by{
+    position: relative;
+    top: 200px;
+    color: rgb(251, 247, 247);
+    background-color: rgb(113, 93, 93);
+    padding: 20px;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 10px;
+    text-align: center;
+}
